@@ -1,4 +1,3 @@
-//your variable declarations here
 Spaceship nojo18 = new Spaceship();
 Star [] flamingo = new Star[200];
 public void setup() 
@@ -8,6 +7,7 @@ public void setup()
     flamingo[i] = new Star();
   }
 }
+
 public void draw() 
 {
   background(0);
@@ -17,15 +17,16 @@ public void draw()
     flamingo[i].show();
   }
 }
+
 public void keyPressed()
 {
-  if(key == '4')
+  if(key == '4'){
     nojo18.turn(-5);
-  else if(key == '6')
+  }else if(key == '6'){
     nojo18.turn(5);
-  else if(key == '5')
+  }else if(key == '5'){
     nojo18.accelerate(0.3);
-  else if(key == 'h') 
+  }else if(key == 'h'){
     nojo18.hyperspace();
-  
+  }
 }
