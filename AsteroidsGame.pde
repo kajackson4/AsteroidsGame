@@ -29,5 +29,5 @@ public void keyPressed()
   }else if(key == 'h'){
     nojo18.hyperspace();
    }
-   }
+   
 }
