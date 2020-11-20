@@ -20,12 +20,14 @@ public void draw()
 
 public void keyPressed()
 {
-  if(key == '4')
+  if(key == '4'){
     nojo18.turn(-5);
-  else if(key == '6')
+  }else if(key == '6'){
     nojo18.turn(5);
-  else if(key == '5')
+  }else if(key == '5'){
     nojo18.accelerate(0.3);
-  else if(key == 'h')
+  }else if(key == 'h'){
     nojo18.hyperspace();
+   }
+   }
 }
