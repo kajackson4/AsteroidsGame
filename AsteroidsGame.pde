@@ -2,6 +2,7 @@ ArrayList <Bullet> shots = new ArrayList <Bullet> ();
 ArrayList <Asteroid> jerry = new ArrayList <Asteroid> ();
 Spaceship nojo18 = new Spaceship();
 Star [] flamingo = new Star[200];
+
 public void setup() 
 {
   size(500, 500);
@@ -12,6 +13,7 @@ public void setup()
     jerry.add(new Asteroid());
   }
 }
+
 public void draw() 
 {
   background(0);
@@ -43,9 +45,9 @@ public void draw()
       break;
     }
   }
-  }
-    
+  }   
 }
+
 public void keyPressed()
 {
   if(key == '4'){
