@@ -3,15 +3,14 @@ class Bullet extends Floater{
     myCenterX = theShip.getX();
     myCenterY = theShip.getY();
     myPointDirection = theShip.getPointDirection();
-    myXspeed = myYspeed = 0;
+    myXspeed = theShip.getmyXspeed();
+    myYspeed = theShip.getmyYspeed();
     accelerate(1.0);
   }
   
   public double getX(){return myCenterX;}
   public double getY(){return myCenterY;}
   public double getPointDirection(){return myPointDirection;}
-  public double getmyXSpeed(){return myXspeed;}
-  public double getmyYSpeed(){return myYspeed;}
   
   public void show(){
     fill(color((int)(Math.random()*55+200), (int)(Math.random()*50+60), (int)(Math.random()*44 +220)));
