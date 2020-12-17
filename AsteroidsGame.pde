@@ -22,7 +22,7 @@ public void draw()
     jerry.get(i).move();
     float d = dist((float)nojo18.getX(), (float)nojo18.getY(), (float)jerry.get(i).getX(), (float)jerry.get(i).getY());
     if(d < 8){
-      text("ouch!!",(int)nojo18.getX(), (int)nojo18.getY()+ 15);
+      text("ouch!!",(int)nojo18.getX(), (int)(nojo18.getY()+ 15));
       jerry.remove(i);
     }
   }
@@ -37,7 +37,7 @@ public void draw()
     for(int i = 0; i < jerry.size(); i++){
     float k = dist((float)shots.get(j).getX(), (float)shots.get(j).getY(), (float)jerry.get(i).getX(), (float)jerry.get(i).getY());
     if(k < 11){
-      text("gotcha!", (int)shots.get(j).getX(), (int)shots.get(j).getY()+10);
+      text("gotcha!", (int)shots.get(j).getX(), (int)(shots.get(j).getY()+10));
       jerry.remove(i); 
       shots.remove(j);
       break;
