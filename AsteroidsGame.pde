@@ -56,7 +56,7 @@ public void keyPressed()
     nojo18.accelerate(0.3);
   }else if(key == 'h'){  
     nojo18.hyperspace();
-  } else if(key == 'k'){
+  } else if(key == ' '){
     shots.add(new Bullet(nojo18));
   }
 }
