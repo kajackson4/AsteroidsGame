@@ -1,4 +1,4 @@
-ArrayList <Bullet> shots = new ArrayList <Bullet>();
+ArrayList <Bullet> shots = new ArrayList <Bullet> ();
 ArrayList <Asteroid> jerry = new ArrayList <Asteroid> ();
 Spaceship nojo18 = new Spaceship();
 Star [] flamingo = new Star[200];
